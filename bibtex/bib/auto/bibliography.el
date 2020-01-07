@@ -2,12 +2,13 @@
  "bibliography"
  (lambda ()
    (LaTeX-add-bibitems
+    "acquaviva2008"
     "adger2010"
+    "adger2012"
     "aikhenvald2000"
-    "arregui2011"
     "bale2008"
-    "bale2014"
     "bale2011"
+    "bale2014"
     "bale2016"
     "baunaz2018"
     "beaver2003"
@@ -54,7 +55,7 @@
     "vandenberg1996"
     "waltz2007"
     "wiltschko2008"
-    "wiltschko2009"
+    "wiltschko2012"
     "wiltschko2015"
     "yalcin2018"))
  :bibtex)

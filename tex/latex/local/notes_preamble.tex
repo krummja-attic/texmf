@@ -1,8 +1,4 @@
 % Package Definitions
-
-\usepackage{fontspec}
-\usepackage[utf8]{inputenc}
-\usepackage{ebgaramond}
 \usepackage{graphicx}     % Standard graphics package
 \usepackage{expex}        % Linguistics - Interlinear Glossing
 \usepackage{tipa}         % Linguistics - IPA
@@ -10,28 +6,33 @@
 \usepackage{pstricks}
 \usepackage{pst-xkey}
 \usepackage{pst-jtree}    % Syntax diagrams
-\usepackage{qtree}
-\usepackage{amsmath}      % Math extensions
+\usepackage{amsmath, amsthm}      % Math extensions
 \usepackage{hyperref}     % Page linking
 \usepackage{subfiles}     % Modular documents
 \usepackage{comment}      % Comment environment block
 \usepackage{enumitem}
 
-\usepackage[top=1.5in, bottom=1.5in, left=1.5in, right=1.5in]{geometry}
+\usepackage[top=1in, bottom=1in, left=0.85in, right=0.85in]{geometry}
 %\setmainfont{EB Garamond}
 
-	\newcommand{\ipa}{\textipa}
-	\newcommand{\uu}{\textipa{0}}
-	\newcommand{\uun}{\textipa{\~{0}}}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+  \colorlet{shadecolor}{orange!15}
+\theoremstyle{definition}
+\newtheorem{exer}{Exercise}
+\newtheorem{defn}{Definition}
+\newtheorem{diag}{Diagram}
 
-  \newcommand{\armenian}{\fontencoding{OT6}\fontfamily{cmr}\selectfont}
-  \DeclareTextFontCommand{\textarmenian}{\armenian}
+	\newcommand{\ipa}{\textipa}
+	\newcommand{\uu}{{\small \textipa{0}}}
+	\newcommand{\uun}{{\small \textipa{\~{0}}}}
 
   \definelingstyle{kot}{everygla=, aboveglbskip=0pt, aboveglftskip=-2pt}
 
-
 % Document Settings
 \linespread{1.15}
+\setlength\parindent{0pt}
 
 % Definitions and Commands
 \def\bibfont{\footnotesize}
