@@ -6,7 +6,8 @@
 \usepackage{graphicx}     % Standard graphics package
 \usepackage{expex}        % Linguistics - Interlinear Glossing
 \usepackage{tipa}         % Linguistics - IPA
-\usepackage{natbib}
+% \usepackage{natbib}
+\usepackage[natbib=true, backend=biber, style=authoryear]{biblatex}
 \usepackage{pstricks}
 \usepackage{pst-xkey}
 \usepackage{pst-jtree}    % Syntax diagrams
@@ -21,17 +22,12 @@
 %\setmainfont{EB Garamond}
 
 	\newcommand{\ipa}{\textipa}
-	\newcommand{\uu}{\textipa{0}}
-	\newcommand{\uun}{\textipa{\~{0}}}
-
-  \newcommand{\armenian}{\fontencoding{OT6}\fontfamily{cmr}\selectfont}
-  \DeclareTextFontCommand{\textarmenian}{\armenian}
-
-  \definelingstyle{kot}{everygla=, aboveglbskip=0pt, aboveglftskip=-2pt}
-
 
 % Document Settings
 \linespread{1.15}
+\pretolerance=10000
 
 % Definitions and Commands
 \def\bibfont{\footnotesize}
+
+% \addbibresource{zotero.bib}
